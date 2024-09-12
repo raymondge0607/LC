@@ -1,0 +1,4 @@
+## Chapter One Reading Response
+Something upon reading that was new to me was how critical transparency is to live coding and how important it is for the audience to be able to see what the live coder is doing. It makes the whole peformance more vulnerable but more engaging. Another thing that was new to me the comparison between live coding and movements like the "DIY, punk, an post-punk ethos", in the rejections of strict and rigid philosophies and structures.
+
+Something upon reading that wasn't new to me and that I was familiar with was the concept of how programming languages, similarily to human languages, use structured systems to describe algorithms and communicate instructions. Another thing that wasn't new to me was the improvisational factor to live coding and how important it is to the peformance aspect in adapting and changing as you go.
