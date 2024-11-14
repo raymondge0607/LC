@@ -1,0 +1,57 @@
+setcps 0.22
+setcps (-1)
+-- # vowel "a e i o u e i o"
+
+-- hi hat
+d1 $ sound "hh!16" # gain "0.85 0.6 1 0.6 0.85 0.6 1 0.6 0.85 0.6 1 0.6 0.85 0.6 1 0.6"
+solo 1
+unsolo 1
+mute 1
+unmute 1
+
+-- snare
+d2 $ sound "~!4 sn:2 ~!7 sn:2 ~!7 sn:2 ~!4 sn:2 ~!2 sn:2 ~!3" # gain "0.8"
+solo 2
+unsolo 2
+mute 2
+unmute 2
+
+-- kick
+d4 $ sound "~!6 bd:1 bd:1 ~!14 bd:1 bd:1 ~!8"
+solo 4
+unsolo 4
+mute 4
+unmute 4
+
+--d3 $ sound "rave:0 arp:0 rave:0 arp:0"
+
+
+-- bass
+--d5 $ sound "bass"
+--solo 5
+--unsolo 5
+--mute 5
+--unmute 5
+
+-- arp
+d6 $ n "[d f g a g f d f g a g f d f g a]" # sound "superfm" # gain "0.6" # dry 0.4 # room 0.6 # size 0.8
+d6 $ n "[cs f g a g f cs f g a g f cs f g a]" # sound "superfm" # gain "0.6" # dry 0.4 # room 0.6 # size 0.8
+d6 $ n "[c f g a g f c f g a g f c f g a]" # sound "superfm" # gain "0.6" # dry 0.4 # room 0.6 # size 0.8
+solo 6
+unsolo 6
+mute 6
+unmute 6
+
+-- chords
+d7 $ sound "[chords:4]" # dry 0.4 # room 0.6 # size 0.8 # cutoff 1300
+d7 $ sound "[chords:1]" # dry 0.4 # room 0.6 # size 0.8 # cutoff 1300
+d7 $ sound "[chords:2]" # dry 0.4 # room 0.6 # size 0.8 # cutoff 1300
+d7 $ sound "[chords:3]" # dry 0.4 # room 0.6 # size 0.8 # cutoff 1300
+solo 7
+unsolo 7
+mute 7
+unmute 7
+
+hush
+
+--d1 $ silence
