@@ -1,0 +1,45 @@
+setcps (110/60/4)
+
+d1 $ n "[d3(3,8) f3(3,8) e3(3,8,2) a3(3,8,2)]/2" # s "sine" # crush 5 # gain 0.7
+solo 1
+unsolo 1
+mute 1
+unmute 1
+
+d2 $ sound "[bd ~!2 bd ~!2 bd ~ bd ~!2 bd ~!2 bd ~]" # hpf 300 #phaserrate 0.3
+solo 2
+unsolo 2
+mute 2
+unmute 2
+
+d3 $ sound "bd:4!4"
+solo 3
+unsolo 3
+mute 3
+unmute 3
+
+d4 $ sound "~!4 sn:2 ~!7 sn:2 ~!3" # gain "0.8" # dry 0.7 # room 0.4 # size 0.8
+solo 4
+unsolo 4
+mute 4
+unmute 4
+
+d5 $ sound "hh!16" # gain "0.75 0.5 0.9 0.5 0.75 0.5 0.9 0.5"
+solo 5
+unsolo 5
+mute 5
+unmute 5
+
+d6 $ slice 16 "[2|4|8|16]" $ s "[palladium:1]" # gain 1
+solo 6
+unsolo 6
+mute 6
+unmute 6
+
+d7 $ n "[d e g a b d e g a b d e g a b d e g a b]" # sound "superfm" # release 0.15 # gain "0.55" # dry 0.4 # room 0.6 # size 0.9 # crush 5
+solo 7
+unsolo 7
+mute 7
+unmute 7
+
+hush
