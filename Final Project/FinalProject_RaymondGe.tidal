@@ -1,0 +1,60 @@
+setcps (110/60/4)
+
+--stutter kicks
+d1 $ rev $ stut 3 0.5 0.125 $ sound "[sakamoto:1](3,8)"
+d1 $ stut' 1 0.125 (|*| gain "0.8") $ sound "[sakamoto:1](3,8)"
+solo 1
+unsolo 1
+mute 1
+unmute 1
+
+--metro hi hat
+d2 $ sound "hh*4" # n "0 0 0 0"
+solo 2
+unsolo 2
+mute 2
+unmute 2
+
+d3 $ sound "~!4 sn:2 ~!7 sn:2 ~!3" # gain "0.8" # dry 0.7 # room 0.4 # size 0.8
+solo 3
+unsolo 3
+mute 3
+unmute 3
+
+d4 $ slow 0.5 $ sound "supersaw*8" # n "12 17 19 24 29 24 19 17" # lpf 800 # legato 0.5 # room 0.6 # size 0.9 # gain 0.6 # delay 0.7 # phaserrate 0.3
+solo 4
+unsolo 4
+mute 4
+unmute 4
+
+--striate range from 2 -> 4096
+d5 $ striate 2 $ slice 8 "[2|4|8|16]" $ s "[sakamoto:3]" # size 0.9 # delay 0.9 #lpf 200 # gain 1
+solo 5
+unsolo 5
+mute 5
+unmute 5
+
+--bass 8th notes
+d6 $ slow 1 $ sound "supersaw*8" # n "-24" # lpf 200 # crush 5 # gain 0.9
+--I
+d6 $ slow 1 $ sound "supersaw*8" # n "-26" # lpf 200 # crush 5 # gain 0.9
+--bVII
+d6 $ slow 1 $ sound "supersaw*8" # n "-28" # lpf 200 # crush 5 # gain 0.9
+--bVI
+d6 $ slow 1 $ sound "supersaw*8" # n "-29" # lpf 200 # crush 5 # gain 0.9
+--V
+d6 $ slow 1 $ sound "supersaw*8" # n "-31" # lpf 200 # crush 5 # gain 0.9
+--IV
+d6 $ slow 1 $ sound "supersaw*8" # n "-33" # lpf 200 # crush 5 # gain 0.9
+--bIII
+d6 $ slow 1 $ sound "supersaw*8" # n "-34" # lpf 200 # crush 5 # gain 0.9
+--II
+d6 $ slow 1 $ sound "supersaw*8" # n "-36" # lpf 200 # crush 5 # gain 0.9
+--I
+solo 6
+unsolo 6
+mute 6
+unmute 6
+
+
+hush
